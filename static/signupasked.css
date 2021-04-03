@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.log {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  background-color: black;
+}
+.log img {
+  width: 70px;
+  height: 60px;
+  margin-top: 19px;
+  margin-left: 30px;
+}
+.log .text {
+  font-size: 3.2rem;
+  font-family: "Bree Serif", serif;
+  margin: auto;
+  margin-top: 12px;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+}
+.farmer {
+  width: 350px;
+  height: 350px;
+  margin-top: 60px;
+  text-align: center;
+  background-color: silver;
+}
+.farmer p {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 2.5rem;
+}
+.farmer .farm {
+  font-size: 1.4rem;
+  font-family: "Ovo", serif;
+}
+.farmer1 {
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  margin-top: 60px;
+  background-color: silver;
+}
+.farmer1 p {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 2.5rem;
+}
+.farmer1 .farm1 {
+  font-size: 1.4rem;
+  font-family: "Ovo", serif;
+}
+.farmer .btn {
+  border: 2px solid rgb(38, 230, 38);
+  width: 120px;
+  margin: auto;
+  height: 40px;
+  background-color: rgb(34, 189, 34);
+  margin: auto;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.farmer1 .btn1 {
+  border: 2px solid rgb(38, 230, 38);
+  width: 120px;
+  margin: auto;
+  height: 40px;
+  background-color: rgb(34, 189, 34);
+  font-size: 1rem;
+  margin: auto;
+  cursor: pointer;
+}
+.farmer .btn a {
+  text-decoration: none;
+  color: white;
+  padding: 32px;
+}
+.farmer1 .btn1 a {
+  text-decoration: none;
+  color: white;
+  padding: 32px;
+}
+.farmer .btn:hover {
+  background-color: rgb(141, 236, 129);
+  color: black;
+}
+.farmer1 .btn1:hover {
+  background-color: rgb(141, 236, 129);
+  color: black;
+}
+footer {
+  background: rgb(132, 230, 67);
+  color: white;
+  padding: 9px 20px;
+}
+.center {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
