@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title> Login | Kissanarm </title>
+    <link rel="icon" href="../static/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="/static/login.css">
+</head>
+    <body style="background-image: url(/static/img/farmerbg.jpg)">
+    <div class="login-box">
+    <img src="static//img/avatar1.png" class="avatar">
+
+        <h1>Login Here</h1>
+            <form action="/Checklogin">
+            <p>Phone Number</p>
+            <input type="text" name="user_phone">
+            <p>Password</p>
+            <input type="password" name="password">
+            <input type="submit" style="margin-top: 20px;" name="submit" value="Login"><br>
+                <div style="color:red">{{error}}</div>
+            <a href="#">Forgot Password ?</a><br><br><br>
+            Didn't have an account? <a href="/Signup" style="font-weight:bolder"><i>SignUp here</i></a>
+            </form>
+    </body>
+</html>
