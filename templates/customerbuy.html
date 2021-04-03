@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CustomerBuy |KissanFarm</title>
+        <link rel="icon" href="../static/logo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="/static/css1/style.css" />
+        <link rel="stylesheet" media="screen and (max-width: 1000px)" href="/static/css1/phone.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
+  </head>
+  <body style="background-color: rgb(248, 226, 190);">
+
+
+    <nav id="navbar">
+      <div id="logo">
+          <img src="/static/logo.png" >
+      </div>
+      <ul>
+          <li style="cursor:pointer" class="item"><a id="hom">Home</a></li>
+          <li style="cursor:pointer" class="item"><a id="serv">Services</a></li>
+
+          <li style="cursor:pointer" class="item"><a id="abo" style="width:104px">About us</a></li>
+          <li style="cursor:pointer" class="item"><a id="con" style="width:119px">Contact Us</a></li>
+
+          <div class="dropdown">
+              <button class="dropbtn item" >Buy
+                  <i class="fa fa-caret-down item" style="color: white;"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#vegdiv">Vegetables</a>
+                <a href="#fruidiv">Fruits</a>
+                <a href="#graindiv">Grains</a>
+                <a href="#pulsediv">Pulses</a>
+              </div>
+          </div>
+      </ul>
+      <div class="cart" style="display: flex;width: 55%;justify-content: flex-end; flex-wrap: wrap;">
+          <a href="#cart"><img src="/static/img1/cart.png" style="width: 40px; height: 30px; "></a>
+          <div class="dropdown">
+              <button class="dropbtn item" >Hello {{nm}}
+                  <i class="fa fa-caret-down item" style="color: white;"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="/Customerprofile">Profile</a>
+                <a href="/customerlogout">Logout</a>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <section id="12">
+
+    <div id="vegdiv" style="margin-top: 70px;" >
+
+
+
+
+        <!-- <p style="text-align: center; font-size: 50px;">Your Price: <span style="color:red;">5000<span style="font-size: 35px;"></span></span></p> -->
+        <div  style="margin-left: 2vw;margin-right: 2vw;background-color: #6f459e;border-radius: 67px; margin-top: 59px;">
+            <p style="font-weight: bolder; font-size: 50px; color: #ced0d1; text-align: center;">VEGETABLES</p>
+        </div>
+              <div class="row" >
+
+
+
+
+                  <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                    <div class="shop-item-details">
+                      <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">25 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                      <center>
+                        <img class="shop-item-image" src="/static/img1/product-1.jpg" style="width: 350px; height: 250px;" ></img>
+                      </center>
+                      <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Capsicum</h2>
+                       <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                    </div>
+
+                    </div>
+
+                  <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                    <div class="shop-item-details">
+                      <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">20 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                      <center>
+                        <img class="shop-item-image" src="/static/img1/product-5.jpg" style="width: 350px; height: 250px;" ></img>
+                      </center>
+                      <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Tomato</h2>
+                       <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                    </div>
+
+                    </div>
+
+                    <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                      <div class="shop-item-details">
+                        <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">35 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                        <center>
+                            <img class="shop-item-image" src="/static/img1/peas.jpg" style="width: 350px; height: 250px;" ></img>
+                        </center>
+                        <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Green Peas</h2>
+          
+                         <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                      </div>
+
+                      </div>
+
+
+              </div>
+
+
+
+              <div class="row">
+
+
+                <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                  <div class="shop-item-details">
+                    <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">30 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                   <center>
+                    <img class="shop-item-image" src="/static/img1/product-7.jpg" style="width: 350px; height: 250px;" ></img>
+                   </center>
+                    <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Carrot</h2>
+
+                     <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                  </div>
+
+                  </div>
+
+                <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                  <div class="shop-item-details">
+                    <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">17 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                   <center>
+                    <img class="shop-item-image" src="/static/img1/radish.jfif" style="width: 350px; height: 250px;" ></img>
+                   </center>
+                    <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Radish</h2>
+
+                     <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                  </div>
+
+                  </div>
+
+                  <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                    <div class="shop-item-details">
+                      <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">20 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                      <center>
+                        <img class="shop-item-image" src="/static/img1/product-12.jpg" style="width: 350px; height: 250px;" ></img>
+                      </center>
+                      <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Red Chilli</h2>
+
+                       <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                    </div>
+
+                    </div>
+
+
+
+              </div>
+
+
+            </div>
+
+            </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="fruidiv">
+    <div style="margin-left: 2vw;margin-right: 2vw;background-color: #6f459e;border-radius: 67px;">
+        <p style="font-weight: bolder; font-size: 50px; color: #ced0d1; text-align: center;">FRUITS</p>
+    </div>
+          <div class="row">
+
+
+
+
+              <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                <div class="shop-item-details">
+                  <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">40 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                  <center>
+                    <img class="shop-item-image" src="/static/img1/orange.jpg" style="width: 350px; height: 250px;" ></img>
+                  </center>
+                  <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Orange</h2>
+ 
+                   <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                </div>
+
+                </div>
+
+              <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                <div class="shop-item-details">
+                  <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">45 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                  <center>
+                    <img class="shop-item-image" src="/static/img1/guava.jpg" style="width: 350px; height: 250px;" ></img>
+                  </center>
+                  <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Guava</h2>
+
+                   <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                </div>
+
+                </div>
+
+                <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                  <div class="shop-item-details">
+                    <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">20 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                    <center>
+                        <img class="shop-item-image" src="/static/img1/banana.jpg" style="width: 350px; height: 250px;" ></img>
+                    </center>
+                    <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Banana</h2>
+
+                     <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                  </div>
+
+                  </div>
+
+
+          </div>
+
+
+
+          <div class="row">
+
+
+            <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+              <div class="shop-item-details">
+                <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">50 ₹/kg<span style="font-size: 25px;"></span></span></p>
+               <center>
+                <img class="shop-item-image" src="/static/img1/grape.png" style="width: 350px; height: 250px;" ></img>
+               </center>
+                <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Grapes</h2>
+ 
+                 <button class="shop-item-button addtocarthover" >Add to Cart</button>
+              </div>
+
+              </div>
+
+            <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+              <div class="shop-item-details">
+                <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">80 ₹/kg<span style="font-size: 25px;"></span></span></p>
+               <center>
+                <img class="shop-item-image" src="/static/img1/apple.jfif" style="width: 350px; height: 250px;" ></img>
+               </center>
+                <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Apple</h2>
+  
+                 <button class="shop-item-button addtocarthover" >Add to Cart</button>
+              </div>
+
+              </div>
+
+              <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                <div class="shop-item-details">
+                  <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">100 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                  <center>
+                    <img class="shop-item-image" src="/static/img1/pome.jpg" style="width: 350px; height: 250px;" ></img>
+                  </center>
+                  <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Pomegranate</h2>
+      
+                   <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                </div>
+
+                </div>
+
+
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="graindiv">
+        <div style="margin-left: 2vw;margin-right: 2vw;background-color: #6f459e;border-radius: 67px;">
+            <p style="font-weight: bolder; font-size: 50px; color: #ced0d1; text-align: center;">GRAINS</p>
+        </div>
+              <div class="row">
+
+
+                  <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                    <div class="shop-item-details">
+                      <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">1500 ₹/50kg<span style="font-size: 25px;"></span></span></p>
+                      <center>
+                        <img class="shop-item-image" src="/static/img1/wheat.jpg" style="width: 350px; height: 231px; margin-top: 1.5vw;" ></img>
+                      </center>
+                      <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Wheat</h2>
+     
+                       <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                    </div>
+
+                    </div>
+
+                  <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                    <div class="shop-item-details">
+                      <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">110 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                      <center>
+                        <img class="shop-item-image" src="/static/img1/rajma.jpg" style="width: 350px; height: 250px;" ></img>
+                      </center>
+                      <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Red Rajma</h2>
+    
+                       <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                    </div>
+
+                    </div>
+
+                    <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                      <div class="shop-item-details">
+                        <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">1200 ₹/50kg<span style="font-size: 25px;"></span></span></p>
+                        <center>
+                            <img class="shop-item-image" src="/static/img1/barley.jpg" style="width: 350px; height: 231px; margin-top: 1.5vw;" ></img>
+                        </center>
+                        <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Barley</h2>
+    
+                         <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                      </div>
+
+                      </div>
+
+
+              </div>
+
+
+
+              <div class="row">
+
+
+                <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                  <div class="shop-item-details">
+                    <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">500 ₹/50kg<span style="font-size: 25px;"></span></span></p>
+                   <center>
+                    <img class="shop-item-image" src="/static/img1/maize.jpg" style="width: 350px; height: 231px; margin-top: 1.5vw;" ></img>
+                   </center>
+                    <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Maize</h2>
+     
+                     <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                  </div>
+
+                  </div>
+
+                <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                  <div class="shop-item-details">
+                    <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">3000 ₹/50kg<span style="font-size: 25px;"></span></span></p>
+                   <center>
+                    <img class="shop-item-image" src="/static/img1/rice.jpg" style="width: 350px;  height: 231px; margin-top: 1.5vw;" ></img>
+                   </center>
+                    <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Rice</h2>
+      
+                     <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                  </div>
+
+                  </div>
+
+                  <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                    <div class="shop-item-details">
+                      <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">1800 ₹/Quintal<span style="font-size: 25px;"></span></span></p>
+                      <center>
+                        <img class="shop-item-image" src="/static/img1/bajra.jpg" style="width: 350px; height: 250px;" ></img>
+                      </center>
+                      <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Bajra</h2>
+          
+                       <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                    </div>
+
+                    </div>
+
+
+
+              </div>
+
+
+            </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="pulsediv">
+            <div style="margin-left: 2vw;margin-right: 2vw;background-color: #6f459e;border-radius: 67px;">
+                <p style="font-weight: bolder; font-size: 50px; color: #ced0d1; text-align: center;">PULSES</p>
+            </div>
+                  <div class="row">
+
+
+
+
+                      <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                        <div class="shop-item-details">
+                          <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">80 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                          <center>
+                            <img class="shop-item-image" src="/static/img1/moong.jpg" style="width: 350px;  height: 231px; margin-top: 1.5vw;" ></img>
+                          </center>
+                          <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Green Monng Dal</h2>
+         
+                           <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                        </div>
+
+                        </div>
+
+                      <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                        <div class="shop-item-details">
+                          <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">100 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                          <center>
+                            <img class="shop-item-image" src="/static/img1/whitepeas.jpg" style="width: 350px;  height: 231px; margin-top: 1.5vw;" ></img>
+                          </center>
+                          <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">White Peas</h2>
+        
+                           <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                        </div>
+
+                        </div>
+
+                        <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                          <div class="shop-item-details">
+                            <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">100 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                            <center>
+                                <img class="shop-item-image" src="/static/img1/masoor.png" style="width: 350px; height: 250px;" ></img>
+                            </center>
+                            <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Masoor Dal</h2>
+        
+                             <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                          </div>
+
+                          </div>
+
+
+                  </div>
+
+
+
+                  <div class="row">
+
+
+                    <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                      <div class="shop-item-details">
+                        <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">150 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                       <center>
+                        <img class="shop-item-image" src="/static/img1/urad.jpg" style="width: 350px;  height: 231px; margin-top: 1.5vw;" ></img>
+                       </center>
+                        <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Urad Dal</h2>
+         
+                         <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                      </div>
+
+                      </div>
+
+                    <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                      <div class="shop-item-details">
+                        <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">4500 ₹/Quintal<span style="font-size: 25px;"></span></span></p>
+                       <center>
+                        <img class="shop-item-image" src="/static/img1/gram.jpg" style="width: 350px;  height: 231px; margin-top: 1.5vw;" ></img>
+                       </center>
+                        <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">Gram</h2>
+          
+                         <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                      </div>
+
+                      </div>
+
+                      <div class="card shop-item" style=" background-color: white; margin-left: 15px;margin-right: 15px; margin-top: 40px; width: 350px;margin-bottom: 50px ">
+                        <div class="shop-item-details">
+                          <p style="text-align: center; font-weight: bolder; font-size: 35px;margin-top: 15px; background-color: rgb(206, 205, 205);">Price:<span class="shop-item-price" style="color: red;">80 ₹/kg<span style="font-size: 25px;"></span></span></p>
+                          <center>
+                            <img class="shop-item-image" src="/static/img1/whitegram.jpg" style="width: 350px;  height: 231px; margin-top: 1.5vw;" ></img>
+                          </center>
+                          <h2 style="text-align: center;  font-weight: bolder;" class="shop-item-title">White Chick Peas</h2>
+              
+                           <button class="shop-item-button addtocarthover" >Add to Cart</button>
+                        </div>
+
+                        </div>
+
+
+
+                  </div>
+
+
+                </div>
+
+                </div>
+
+
+
+<br>
+<div style="width: auto;
+margin-left: 6vw;
+margin-right: 6vw;
+border: 4px solid black;
+margin-bottom: 8vw;
+margin-top: 6vw;
+background-color: white;">
+
+  <section class="container content-section" id="cart">
+    <h2 class="section-header" style="background-color:crimson; margin-bottom: 4vw;">YOUR CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">0<span style="font-size: 16px;"></span></span>
+    </div>
+   <a href= "/Checkout" style="text-decoration: none;">
+    <button class="btn btn-primary " type="button" style="   display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;  margin-bottom: 3vw;
+    margin-top: 2vw;">BUY</button>
+   </a>
+</section>
+</div>
+<footer>
+  <div class="center">
+      Copyright &copy; www.kissanFarm.com. All rights reserved!
+  </div>
+</footer>
+
+        <script src="/static/script/script.js"></script>
+  <script>
+      document.getElementById("serv").onclick = function()
+      {
+          window.location.href = "/#services-container";
+      }
+      document.getElementById("hom").onclick = function()
+      {
+          window.location.href = "/#home";
+      }
+      document.getElementById("abo").onclick = function()
+      {
+          window.location.href = "/#aboutus-section";
+      }
+      document.getElementById("con").onclick = function()
+      {
+          window.location.href = "/#contact";
+      }
+      </script>
+  </body>
+</html>
