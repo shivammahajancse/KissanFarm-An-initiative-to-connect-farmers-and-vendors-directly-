@@ -1,0 +1,773 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 90%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  margin-top: 0.5vw;
+  display: block;
+  padding: 3px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+.dropdown {
+  overflow: hidden;
+  margin-left: 1vw;
+  margin-right: 0vw;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 18px;
+
+  border: none;
+  outline: none;
+  margin-top: -0.3vw;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+  display: none;
+  margin-left: 9px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 127px;
+  margin-top: -0.6vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  border-radius: 42px;
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 45px;
+  margin: 0px 10px;
+}
+
+/* Navigation Bar: List Styling */
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bg_2.jpg") no-repeat center;
+  background-size: cover;
+  height: 642px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  margin-top: 20px;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+/* Services Section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 55px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+/* Aboutus Section */
+#aboutus {
+  margin: 44px;
+  display: flex;
+  justify-content: center;
+}
+#aboutus .teambox {
+  border: 2px solid rgb(56, 165, 42);
+  border-radius: 120px;
+  padding: 34px;
+  margin: 2px 50px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+.name {
+  padding: 34px;
+  margin: 2px 55px;
+}
+#aboutus .teambox img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+#aboutus .teambox button {
+  margin: auto;
+  display: block;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  background: url("../contact.jpg") no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  border: 1px solid rgb(84, 219, 21);
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.1rem;
+  font-family: "Bree Serif", serif;
+}
+
+footer {
+  background: rgb(132, 230, 67);
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-family: "Baloo Bhai", cursive;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+.team {
+  font-family: "Bree Serif", serif;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.teambtn {
+  width: 90px;
+  font-family: "Bree Serif", serif;
+  font-size: 0.9rem;
+  padding: 10px;
+  cursor: pointer;
+}
+.teambtn:hover {
+  background-color: #080808;
+  color: white;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(67, 165, 42);
+  color: white;
+  margin: 17px;
+  margin-top: 40px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(104, 102, 102);
+  color: black;
+}
+
+.center {
+  text-align: center;
+}
+.row {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  margin-top: 40px;
+  width: 350px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  margin: 0%;
+  bottom: 0px;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.goog-te-banner-frame {
+  top: initial;
+  bottom: 0;
+}
+#google_translate_element {
+  left: 5px;
+  z-index: 1;
+}
+#header {
+  margin-top: 10px;
+}
+
+/* cart */
+
+/* .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.content-section {
+    margin: 1em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+    url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(34, 33, 33, 0.3);
+}
+
+.main-nav li {
+  padding: 0 5%;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url("Images/Header Background.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.band-name {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: "Booter - Zero Zero";
+  font-weight: normal;
+  color: white;
+}
+
+.band-name-large {
+  font-size: 8em;
+}
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+.section-header {
+  font-family: "Metal Mania";
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.about-band-image {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.main-footer {
+  background-color: #56ccf2;
+  color: white;
+  padding: 0.25em 0;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav li {
+  padding: 0 0.5em;
+}
+
+.footer-nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.17em 0.17em;
+  cursor: pointer;
+}
+
+.btn-header {
+  margin: 0.5em 15% 2em 15%;
+  color: white;
+  border: 2px solid #2d9cdb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.btn-header:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-play {
+  display: block;
+  margin: 0 auto;
+  color: #2d9cdb;
+  font-size: 4em;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #56ccf2;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.addtocarthover:hover {
+  background-color: #fc0808;
+}
+
+.tour-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+  border: none;
+}
+
+.tour-item {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
+.tour-date {
+  color: #555;
+  width: 11%;
+  font-weight: bold;
+}
+
+.tour-city {
+  width: 24%;
+}
+
+.tour-arena {
+  width: 42%;
+}
+
+.tour-btn {
+  max-width: 19%;
+}
+
+/* .shop-item {
+    margin: 30px;
+} */
+
+.shop-item-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.shop-item-image {
+  height: 250px;
+}
+
+.shop-item-price {
+  flex-grow: 1;
+  color: #333;
+}
+
+.shop-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  margin-bottom: 3vw;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
+
+/* @media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+} */
+#google_translate_element {
+  margin-left: 8vw;
+}
+
+@media (max-width: 1000px) {
+  nav .cart {
+    justify-content: center !important;
+  }
+}
