@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best platform for farmers | KissanFarm.com</title>
+    <link rel="icon" href="../static/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../static/css/style1.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="../static/css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .dropbtn {
+            color: white;
+            padding: 3px 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-family: 'Baloo Bhai', cursive;
+        }
+ 
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover
+        {
+            background-color: white;
+            border-radius: 25px;
+            color: black;
+        }
+ 
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+ 
+        .dropdown-content {
+            font-family: 'Bree Serif', serif;
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            min-width: 130px;
+            margin-top: 8px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+ 
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+ 
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+ 
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../static/logo.png" >
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <!-- <li class="item"><a href="#services-container">Product</a></li> -->
+            <li class="item"><a href="#aboutus-section" style="width:76px">About us</a></li>
+            <li class="item"><a href="#contact" style="width:88px">Contact Us</a></li>
+            <li class="item"><a href="/uphaar">Uphaar</a></li>
+        </ul>
+        <div class="logsign" style="margin-left: 26vw;">
+            <li class="item"><a href="/farmerBuy">Buy</a></li>
+            <li class="item"><a href="/Farmersell">Sell</a></li>
+            <div class="dropdown">
+                <li onclick="myFunction()" class="dropbtn">Hello {{nm}} <i class="fa fa-caret-down"></i></li>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/Farmerprofile">Profile</a>
+                    <a href="/farmerlogout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+ 
+    <section id="home">
+        <h1 class="h-primary">Welcome to kissan Farm</h1>
+        <br>
+        <p>An Initiative to connect Farmers and Vendors Directly!</p>
+        <br>
+        <p>This website helps small Vendors to buy Fruits and Vegetables at their DoorStep and Farmers to sell their produce very easily. </p>
+        <button class="btn"><a style="text-decoration: none;color: white;padding: 8px;" href="/Farmersell">Sell Now</a></button>
+        <br>
+        <img src="../static/flow.png" style="width: 69vw;">
+        <br>
+        <p>Facing Problem, Contact Us: 1800 452 XXXX</p>
+        <p>24x7</p>
+    </section>
+ 
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="../static/img/farmer.png" alt="">
+                <h2 class="h-secondary center">Farmer Friendly</h2>
+                
+                <p class="center">
+                    High Prices for their Produce.
+                    A portal to sell and buy Old Machineries ,Fertilizers, Pesticides and many more things.
+                    An Alarm about Weather Forecasting through Calls.
+                    Uphaar Points for every Sell.
+                    An Language translator for better understanding.
+                    We also provide a Toll-Free working 24X7 for any help. 
+                </p>
+            </div>
+            <div class="box">
+                <img src="../static/img/veg.jpg" alt="">
+                <h2 class="h-secondary center">Small-Vendor Friendly</h2>
+                <p class="center">
+                    A portal to provide small Vendors Fruits and Vegetables at their doorstep with an ease.
+                    Our website cuts the need to getting up early and go to the mandi and buy fruits and vegetables at higher Prices. 
+                    Our website is also easy to use so that they face no problem to access it.
+                    We also provide a Toll-Free working 24X7 for any help.
+                </p>
+            </div>
+            <div class="box">
+                <img src="../static/img/3.png" alt="">
+                <h2 class="h-secondary center">Consumer Friendly</h2>
+                <p class="center">
+                    Fresh Fuits and Vegetables are the major need of today generation because they keep us fit.
+                    We provide Fresh Fruits and Vegetables without any Stickers,Chemicals.
+                    We do not use any plastic in Transportation.
+                    We also provide a feature to rate Vendor.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services-container">
+        <h1 class="h-primary center">Testomonials</h1>
+        <div id="services">
+            <div class="box">
+                <img src="../static/3w.jpg" alt="">
+                
+                <p class="center">
+                    <br>
+                    I am a farmer from village near jaipur, I wasn't able to pay EMI
+                    of my tractor due to low return paid by 
+                    the greedy companies who bought my produce but later when I started
+                    business with KissanFarm I bacame the owner of tractor by paying EMI’s on time,
+                    as they pay fair amount for my produce and also provide lots of guidence.
+                </p>
+            </div>
+          
+            <div class="box">
+                <img src="../static/4w.png" alt="">
+                <p class="center">
+                    <br>
+                    I am a small vendor.
+                    I started business with KissanFarm 6 months ago and now I am able to save a good amount of money, 
+                    Since I was able to buy Vegetable and Fruits at low prices as compare to other companies and sell the 
+                    vegetables to my customers in a low price as compare to other vendors in market and 
+                    also giving them good quality food.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="aboutus-section"></section>
+    <h1 class="h-primary center">About Us</h1>
+    <p style="padding: 10px;text-align:center;font-family: 'Bree Serif', serif;">
+        Our Team consists of four developers who perfectly compliment each other. We have two members skilled at Frontend( Tushar Khandelwal, Shivam), 
+        one at Backend (Shubham Choudhary), 
+        one at Cloud(Vaibhav Mittal). We have worked on common projects together, 
+        and participated in numerous hackathons. The environment that our college provide us to form teams and 
+        compete at Hackathons conducted at our college helped us to build better, more impactful products. 
+        We even tried making teams with new people but in the end realized that we four made the best combo.
+        The issue that we have chosen is a fairly complex one, so we had to do extensive research 
+        to find out how to tackle the issue, keeping in mind the various legal and logistical constraints that 
+        kept obstructing our paths. However, after brainstorming and researching for weeks, we finally found a niche where 
+        our entire web application would fit perfectly and effectively.
+    </p>
+    
+    <div id="aboutus">
+        <div class="teambox">
+            <img src="../static/img/avatar.png" alt="">
+            <h2 class="team center">Shubham</h2> 
+            <a href="https://www.linkedin.com/in/shubham-choudhary-5946641aa/">
+                <button class="teambtn" >Contact</button>
+            </a>
+        </div>
+        
+        <div class="teambox">
+            <img src="../static/img/avatar.png" alt="">
+            <h2 class="team center">Shivam</h2>
+            <a href="https://www.linkedin.com/in/shivam-mahajan-1bb5141aa/">
+                <button class="teambtn" >Contact</button>
+            </a>
+
+        </div>
+        <div class="teambox">
+            <img src="../static/img/avatar.png" alt="">
+            <h2 class="team center">Tushar</h2>
+            <a href="https://www.linkedin.com/in/tushar-khandelwal-674728192/">
+                <button class="teambtn" >Contact</button>
+            </a>
+            
+        
+        </div>
+        <div class="teambox">
+            <img src="../static/img/avatar.png" alt="">
+            <h2 class="team center">Vaibhav</h2>
+            <a href="https://www.linkedin.com/in/vaibhav-mittal-00b6661aa/">
+                <button class="teambtn" >Contact</button>
+            </a>
+        </div>
+    </div>
+    </section>
+ 
+    <section id="contact">
+        <h1 style="padding: 20px;" class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button onclick="send()" style="margin-left: 16vw; width: 82px;" class="button">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </section>
+ 
+    <footer>
+        <div class="center">
+            Copyright &copy; www.kissanFarm.com. All rights reserved!
+        </div>
+    </footer>
+    <script>
+        function send() {
+            alert("Thanks For Contacting with us . We will contact you within 24 Hour");
+        }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+ 
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+ 
+</html>
