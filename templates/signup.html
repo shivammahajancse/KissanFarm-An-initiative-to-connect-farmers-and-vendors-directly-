@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>SignUp | Kissan Farm</title>
+    <link rel="icon" href="../static/logo.png" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="/static/signup.css" />
+  </head>
+  <body style="background-image: url(/static/img/farmerbg.jpg)">
+    <div class="login-box">
+      <img src="/static/img/avatar1.png" class="avatar" />
+      <h1>SignUp Here</h1>
+      <form action="/Checksignup">
+        <p>Name</p>
+        <input type="text" name="username" />
+        <p>Email</p>
+        <input type="email" name="email" />
+        <p>Password</p>
+        <input type="password" name="password" />
+        <p>Confirm Password</p>
+        <input type="password" name="cpassword" />
+        <p>Contact Number</p>
+        <input type="text" name="number" />
+        <input
+          type="submit"
+          style="margin-top: 10px"
+          name="submit"
+          value="Signin"
+        /><br /><br />
+        <div style="color:red;>{{error}}"></div>
+        Already SignUp ?
+        <a href="/Login" style="font-weight: bolder"><i>Login here</i></a>
+      </form>
+    </div>
+  </body>
+</html>
