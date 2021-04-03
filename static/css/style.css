@@ -1,0 +1,300 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 90%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 45px;
+  margin: 0px 10px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar .logsign {
+  display: flex;
+  list-style: none;
+  font-family: "Baloo Bhai", cursive;
+  font-size: 1.1rem;
+  margin-left: 40vw;
+}
+
+#navbar .logsign li a {
+  color: white;
+  display: block;
+  padding: 3px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar .logsign li a {
+  color: white;
+  display: block;
+  padding: 3px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar .logsign li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 640px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bg_2.jpg") no-repeat center;
+  background-size: cover;
+  height: 770px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  margin-top: 20px;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+/* Services Section */
+/* #services-container{
+    margin-top: 50px;
+} */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 55px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+#services .box ul li {
+  font-family: "Bree Serif", serif;
+}
+
+/* Aboutus Section */
+#aboutus {
+  margin: 44px;
+  display: flex;
+  justify-content: center;
+}
+#aboutus .teambox {
+  border: 2px solid rgb(56, 165, 42);
+  border-radius: 120px;
+  padding: 34px;
+  margin: 2px 50px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+.name {
+  padding: 34px;
+  margin: 2px 55px;
+}
+#aboutus .teambox img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+#aboutus .teambox button {
+  margin: auto;
+  display: block;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  background: url("../img/contact.jpg") no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  border: 1px solid rgb(84, 219, 21);
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+#contact-box .form-group {
+  margin: 10px;
+}
+#contact-box .button {
+  width: 7vw;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#contact-box .button:hover {
+  background-color: rgb(53, 54, 54);
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.1rem;
+  font-family: "Bree Serif", serif;
+  margin: 10px;
+}
+
+footer {
+  background: rgb(132, 230, 67);
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 3.8rem;
+  padding-top: 60px;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+.team {
+  font-family: "Bree Serif", serif;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.teambtn {
+  width: 90px;
+  font-family: "Bree Serif", serif;
+  font-size: 0.9rem;
+  padding: 10px;
+  cursor: pointer;
+}
+.teambtn:hover {
+  background-color: #080808;
+  color: white;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(67, 165, 42);
+  color: white;
+  margin: 17px;
+  margin-top: 40px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(104, 102, 102);
+  color: black;
+}
+
+.center {
+  text-align: center;
+}
