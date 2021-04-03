@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CheckOut |KissanFarm</title>
+    <link rel="icon" href="../static/logo.png" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../static/css2/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1000px)"
+      href="../static/css2/phone.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+      /* body {
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px;
+        
+      } */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .row1 {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+      }
+
+      .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+      }
+
+      .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+      }
+
+      .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+      }
+
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+
+      .container1 {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+      }
+
+
+      .btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+
+      .btn:hover {
+        background-color: #45a049;
+      }
+
+      a {
+        color: #2196f3;
+      }
+
+      hr {
+        border: 1px solid lightgrey;
+      }
+
+      span.price {
+        float: right;
+        color: grey;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+        .row1 {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+
+<nav id="navbar">
+  <div id="logo">
+      <img src="../static/logo.png" >
+  </div>
+  <ul>
+      <li style="cursor:pointer" class="item"><a id="hom">Home</a></li>
+      <li style="cursor:pointer" class="item"><a id="serv">Services</a></li>
+
+      <li style="cursor:pointer" class="item"><a id="abo" style="width:104px">About us</a></li>
+      <li style="cursor:pointer" class="item"><a id="con" style="width:119px">Contact Us</a></li>
+
+  
+  </ul>
+  <div class="cart" style="display: flex;width: 55%;justify-content: flex-end; flex-wrap: wrap;">
+    
+      <div class="dropdown">
+            <button class="dropbtn item" >Hello {{nm}}
+              <i class="fa fa-caret-down item" style="color: white;"></i>
+            </button>
+          <div class="dropdown-content">
+            <a href="/customerlogout">Logout</a>
+            <a href="editaccount.html">Edit Account</a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+<!-- <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ -->
+
+<div style=" font-family: Arial;
+font-size: 17px;
+padding: 8px;">
+   <center> <h2>Checkout Form</h2></center>
+    <div class="row1">
+      <div class="col-75">
+        <div class="container1">
+          <form>
+            <div class="row1">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <br>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Vaibhav Mittal"
+                />
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="mittal@example.com"
+                />
+                <label for="adr"
+                  ><i class="fa fa-address-card-o"></i> Address</label
+                >
+                <input
+                  type="text"
+                  id="adr"
+                  name="address"
+                  placeholder="9-A,kisanmarg,sitapura"
+                />
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="jaipur"
+                />
+
+                <div class="row1">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input
+                      type="text"
+                      id="state"
+                      name="state"
+                      placeholder="rajasthan"
+                    />
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">PinCode</label>
+                    <input
+                      type="text"
+                      id="zip"
+                      name="zip"
+                      placeholder="302020"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              
+            <input
+              type="submit"
+              value="Continue to checkout"
+              class="btn btn-purchase"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+     
+    <script src="/static/script/script.js" async></script>
+    <a href="../templates/uphaar.html"></a>
+      <script>
+      document.getElementById("serv").onclick = function()
+      {
+          window.location.href = "/#services-container";
+      }
+      document.getElementById("hom").onclick = function()
+      {
+          window.location.href = "/#home";
+      }
+      document.getElementById("abo").onclick = function()
+      {
+          window.location.href = "/#aboutus-section";
+      }
+      document.getElementById("con").onclick = function()
+      {
+          window.location.href = "/#contact";
+      }
+      </script>
+  </body>
+</html>
